@@ -1,0 +1,77 @@
+.App {
+  font-family: sans-serif;
+}
+
+.user-search-input {
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 10px 15px;
+  display: flex;
+  gap: 10px 20px;
+  flex-wrap: wrap;
+}
+
+.user-search-input input {
+  font-size: 18px;
+  outline: none;
+  border: none;
+}
+
+.pill {
+  display: flex;
+  align-items: center;
+  padding: 6px 15px;
+  justify-content: space-between;
+  background-color: rgb(20, 18, 18);
+  color: white;
+  border-radius: 20px;
+  gap: 30px;
+  font-size: 15px;
+}
+.pill .pill-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pill img {
+  width: 25px;
+}
+
+.pill-remove {
+  cursor: pointer;
+  color: gray;
+  &:hover {
+    color: white;
+  }
+}
+
+/*  */
+.suggested-user-list {
+  max-height: 300px;
+  overflow-y: scroll;
+  border: 1px solid #ccc;
+  padding: 0;
+}
+
+.suggested-user-list li {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  padding: 12px 10px;
+  &:hover {
+    background-color: #ccc;
+    cursor: pointer;
+  }
+}
+.active {
+  background-color: #ccc;
+}
+
+.suggested-user-list li img {
+  width: 30px;
+}
+
+.empty {
+  border: none;
+}
